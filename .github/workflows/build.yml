@@ -28,5 +28,4 @@ jobs:
           # default set of ruff rules with GitHub Annotations
           ruff --format=github --target-version=py37 .
       - name: running unit tests
-        run: |
-          python main.py
+        run: python main.py
