@@ -1,0 +1,10 @@
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - pip install -r requirements.txt
+    - python my_test_script.py
+  only:
+    - main  # Replace with the branch name where you want to run the test
